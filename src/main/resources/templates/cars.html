@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+</head>
+<body>
+<h3>Please enter your car information</h3>
+<form method="post" th:action="@{/cars}" th:object="${car}">
+
+  <button type="submit">submit car info</button>
+</form>
+
+</body>
+</html>
